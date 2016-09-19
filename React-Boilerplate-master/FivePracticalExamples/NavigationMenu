@@ -1,0 +1,89 @@
+// this is an example of 4 tabs: 
+
+<!DOCTYPE html>
+<html lang="en`">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React - Tutorial</title>
+    <link rel ="stylesheet" type="text/css" href="../../css/main_five_examples.css">
+    <script src="../../js/react.min.js"></script>
+    <script src="../../js/react-dom.min.js"></script>
+    <script src="../../js/browser.min.js"></script>
+</head>
+<body>
+
+    <div id="container"></div>
+
+    <script type="text/babel">
+
+        var MenuExample = React.createClass({
+
+
+            getInitialState: function(){
+                return { focused: 0 };
+            },
+
+            clicked: function(index){
+
+                // The click handler will update the state with
+                // the index of the focused menu entry
+                console.log("index: " + index);
+                this.setState({focused: index});
+            },
+
+            render: function() {
+
+                // Here we will read the items property, which was passed
+                // as an attribute when the component was created
+
+                var self = this;
+
+                // The map method will loop over the array of menu entries,
+                // and will return a new array with <li> elements.
+                // Map function provide the index parameter for you to reference the items. 
+
+                return (
+                    <div>
+                        <ul>{ this.props.items.map(function(m, index){
+                
+                            var style = '';
+                
+                            if(self.state.focused == index){
+                                style = 'focused';
+                            }
+                
+                            // Notice the use of the bind() method. It makes the
+                            // index available to the clicked function:
+                            // I feel like the reason we need to use bind is that the index is tied to the item 
+                            // also there is a scope issue because the onClick is a callback function and the scope of it's variable is default global, so we need to bind it to the class scope. 
+
+                
+                            return <li className={style} onClick={self.clicked.bind(self, index)}>{m}</li>;
+                
+                        }) }
+                                
+                        </ul>
+                        
+                        <p>Selected: {this.props.items[this.state.focused]}</p>
+                    </div>
+                );
+
+            }
+        });
+
+        // Render the menu component on the page, and pass an array with menu options
+
+        ReactDOM.render(
+            <MenuExample items={ ['Home', 'Services', 'About', 'Contact us'] } />,
+            document.getElementById('container')
+        );
+
+    </script>
+
+</body>
+</html>
+
+
+
+<!-- you make component make sure you only use one div (or one parent component) --> 

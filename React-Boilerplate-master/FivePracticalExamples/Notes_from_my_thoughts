@@ -1,0 +1,12 @@
+//just some thoughts about ReactJS
+
+Props: 
+	properties are used when you try to render the component; That's when you add the properties
+	properties could be a input function from Parent or the system
+	or it could be static data you want to use (such as the list)
+
+States: 
+	states are data that are subjected to change over time or responding to actions. But be aware that you don't need to create the state for all the changing data. "Just need to have the ones at the cause". For example, the RealTimeSearch, the dynamic data are the searching string and the list of times that still needs to be displayed. But the former the cause the latter is the effect. So we just need to create the state variable at the cause. 	
+
+Events: 	
+	Be aware that Events are callback function so if we need to input something to event handler, we need to use bind() like in the NavigationMenu example
