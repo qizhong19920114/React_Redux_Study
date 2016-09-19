@@ -1,0 +1,18 @@
+* Actions are action functions that can be used in the components to react to user or events. Action itself returns an object that contains a type of action (can be any name, because it's just for the switch statement in the reducer) and the data object. 
+
+* Reducer is used in the main app.js to create a store; the reducer code itself updates (update or push or delete) the data based on the type of actions being performanced; there for reducer is just a switch statement with data handling. 
+
+* Provider, I don't think we need to write a provider; it's provided by the redux to hand data down to the containers. So all you need to do is in the main app.js when you render:
+	<Provider store={store}>
+  		<TodoList />
+  	</Provider>
+
+* Containers is used in the main app.js. The way it contains components is by using connect method, mapStateToProps and mapDispatchToProps to convert the components to smart components. mapStateToProps deals with the data, mapDispatchToProps deals with the actions
+
+* Components, funny it's called components but it doesn't even use React createClass, it's just functions that return html blocks/divisions. And it uses functions from actions.js to response to events. So the properties in the component are divided into two types, methods which are passed in from action and data which are passed in from reducers (actually the provider from store, but just from the code it's originally from reducer)
+
+* Store, I don't think we need to write store js file. it's just one line in the main app.js:
+	const store = createStore(reducer);
+
+* Different tutorials' style may varies so just do a couple more and see. 
+	
