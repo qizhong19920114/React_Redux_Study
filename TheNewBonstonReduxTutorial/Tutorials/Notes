@@ -1,0 +1,4 @@
+Redux is for managing states of components
+
+In redux, all the state are put in one big file.
+

@@ -1,0 +1,16 @@
+// delete this file and rename todos the new index.js
+
+import { combineReducers } from 'redux';
+import todos, * as fromTodos from './todos';
+//import visibilityFilter from './visibilityFilter';
+
+const todoApp = combineReducers({
+  todos,
+});
+
+export default todoApp;
+
+// this function iis used in the VisibleTodoList.js component for map state to props
+// this function is called a selector function. 
+export const getVisibleTodos = (state, filter) =>
+	fromTodos.getVisibleTodos(state.todos, filter);
