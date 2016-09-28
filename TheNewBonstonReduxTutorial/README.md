@@ -1,8 +1,6 @@
-![](http://i.imgur.com/DUiL9yn.png)
+## React Redux example by Bucky Roberts
 
-# React/Sass/Redux Boilerplate
-
-Boilerplate and guide for a React/Sass/Redux build.
+[video link](https://www.youtube.com/watch?v=DiLVAXlVYR0&list=PL6gx4Cwl9DGBbSLZjvleMwldX8jGgXV6a)
 
 ## Getting Started
 
@@ -23,13 +21,9 @@ Start the development server (changes will now update live in browser)
 
 To view your project, go to: [http://localhost:3000/](http://localhost:3000/)
 
-## Links
+The app lookes like this: 
 
-- [Donate](https://www.patreon.com/thenewboston)
-- [thenewboston.com](https://thenewboston.com/)
-- [Facebook](https://www.facebook.com/TheNewBoston-464114846956315/)
-- [Twitter](https://twitter.com/bucky_roberts)
-- [Google+](https://plus.google.com/+BuckyRoberts)
-- [reddit](https://www.reddit.com/r/thenewboston/)
+![](http://i.imgur.com/mLB5n9b.png)
 
-
+The Redux dataflow chart: 
+![](http://i.imgur.com/DUiL9yn.png)
