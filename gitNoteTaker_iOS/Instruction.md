@@ -12,5 +12,5 @@ There's following steps (more details in the offocial site):
 * Creating Provisioning Profiles Using Your Developer Account (you can name it whatever, it's kind of like your company name)
 * Downloading Provisioning Profiles in Xcode (Make sure the account in your XCode is your developer account, delete the non-developer accounts in the list)
 
-Once you done the following 4 steps, you can go to Produce -> Destination and change it to your iphone, and then run it by click the triangle button or cmd+R
+Once you done the following 4 steps, you can go to XCode, in the menu bar, Produce -> Destination and change it to your iphone, and then run it by click the triangle button or cmd+R
 
