@@ -8,7 +8,7 @@ Then follow the steps in the official [site](https://developer.apple.com/library
 There's following steps (more details in the offocial site): 
 
 * Registering App ID (you can name it whatever)
-* Registering Devices Using Your Developer Account (Add your device to your developer account by your device UUID)
+* Registering Devices Using Your Developer Account (Add your device to your developer account by your device ID)
 * Creating Provisioning Profiles Using Your Developer Account (you can name it whatever, it's kind of like your company name)
 * Downloading Provisioning Profiles in Xcode (Make sure the account in your XCode is your developer account, delete the non-developer accounts in the list)
 
