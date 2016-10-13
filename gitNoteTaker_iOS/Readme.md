@@ -13,7 +13,7 @@ Here is how you can run and test the app. open the .xcodeproj file in the ios fo
 
 You can also launch the debugger on your chrome browser. Cmd+D on the simulator to show the menu and you can choose to use the remote debugger which is the Chrome browser debugger. Cmd+R on the simulator will Reload the app for you. It's a good feature to use when you make some change on your code. 
 
-![](http://imgur.com/0R3aUxq.gif)
+![Imgur](http://i.imgur.com/JqURUoT.gifv)
 
 
 [Here](https://youtu.be/zVtSmmIdCC8) is the link for the full feature test. 
