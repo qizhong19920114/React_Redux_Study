@@ -25,3 +25,16 @@ npm run dev
 ![Imgur](http://imgur.com/GC3oHA5.gif)
 
 [Here](https://youtu.be/Z0ZVwlJuYIA) is the link for the video test. 
+
+##Topics covered: 
+ 1. Basic setup
+ 2. Basic routing
+ 3. Templating
+ 4. Read static file
+ 5. Http Methods
+ 6. Advance routing
+ 7. Routing organizing
+ 8. JSON streams
+ 9. Middleware
+ 10. MongoDB and Mongoose
+ 11. Mongoose virtual property
