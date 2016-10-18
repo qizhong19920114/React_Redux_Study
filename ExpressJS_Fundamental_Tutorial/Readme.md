@@ -1,5 +1,5 @@
 #ExpressJS Fundamental Tutorial
-This is a tutorial from EggheadIO. The tutorial convers a lot of good concepts and materials. 
+This is a [tutorial](https://egghead.io/courses/getting-started-with-express-js) from EggheadIO. The tutorial convers a lot of good concepts and materials. 
 
 ##Run:
 * From tutorial 1 - 9 , we can just do: 
