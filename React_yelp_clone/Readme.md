@@ -1,5 +1,13 @@
 #React Yelp Clone Tutorial
 
+
+![Imgur](http://imgur.com/D55jSCo.gif)
+
+
+[Here](https://youtu.be/N8z6TuWfOqo) is the link for the video test. 
+
+
+
 This is a long ass tutorial I need to follow, I may encouner some difficults in the process but I will do my best to figure it out. I will take may notes along the way because the tutorial is just too long
 
 - It's a little weird the tutorial is using webpack-hjs, which makes a lot of things different. 
