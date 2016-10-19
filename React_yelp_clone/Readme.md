@@ -6,4 +6,7 @@ This is a long ass tutorial I need to follow, I may encouner some difficults in 
 - **Font Awesome** is a cool library to have to display rating stars
 - I like the part in the code that talks about test (karma, chai, mocha); Well, the setup is the pain the butt
 - I don't like how a big portion of this is just config ...
-- Finally get to routing
+- Finally get to routing, some errors in the router section. the class getter should have "get" keyword 
+- A lot of css part I'm not quote familiar with. CSS part could be my weakness
+- The tutorial missed a big part of Item, Listing and Rating
+- I like the trick here for displaying the rating using width proterty, and overlap two rows of stars and one has the content width determined by the rating calculation. 
