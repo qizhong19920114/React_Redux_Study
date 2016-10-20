@@ -31,7 +31,10 @@ npm run start
 Then go to localhost:3000
 
 #Demo
+- Desktop version:
 ![Imgur](http://imgur.com/D55jSCo.gif)
+- Mobile version: 
+![Imgur](http://imgur.com/GzzOB7d.gif)
 
 
 [Here](https://youtu.be/N8z6TuWfOqo) is the link for the video test. 
