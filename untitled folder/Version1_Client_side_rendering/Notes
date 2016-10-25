@@ -1,0 +1,5 @@
+Just to keep track of interesting tricks and knowledges;
+
+- In the IndexPage.js, we need to pass all the information about the current athlete as props using the JSX spread operator ({...object}). it' like a lazy way of doing name = {atheleteData.name} country = {atheleteData.country} ...
+
+- Interestingly, the author use Header style to set the background AthletePage.js

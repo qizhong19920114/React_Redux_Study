@@ -1,0 +1,35 @@
+Just to keep track of interesting tricks and knowledges;
+
+- In the IndexPage.js, we need to pass all the information about the current athlete as props using the JSX spread operator ({...object}). it' like a lazy way of doing name = {atheleteData.name} country = {atheleteData.country} ...
+
+- Interestingly, the author use Header style to set the background AthletePage.js
+
+- The app can be run by: NODE_ENV=production node_modules/.bin/webpack -p
+	and then: node_modules/.bin/http-server src/static
+	You don't need node server to run, but if you refresh the page you will get 404 errors because we use browseHistory instead of HashHistory
+
+- Server side render using ejs template: The only difference with the original HTML file is that we are using the template variable <%- markup -%> inside the #main div in order to include the React markup into the server-generated HTML code.
+
+- This means catch all route in Express: app.get('*', (req, res) => {}
+
+- Use ReactRouter.match for routing in the server ..
+
+- When we initially load a page in the browser (any page, not necessarily the home page, try for example this one) the server provides the full HTML code of the view and the browser only needs to download linked resources (images, stylesheets and scripts):
+
+- Some keypoints from a similar question on Quora 
+	- Faster perceived load times
+	- SEO 
+	- Less code maintenance
+
+- I still don't quite understand; One thing for sure is that if we use the universal method, the main page is done by server rendering. You can tell by go to the developer Tool, Network tab, and preview the localhost file, you can see that the file is a entire page versus if we do the client rendering, the body is just a "id=main" (I have screenshot for that as well); And then it seems like when I switch from page to page, it's using client side rendering, the network doens't download a new html page, it just download the image files. But if you refresh the whole page, then it will go back to server rendering and load the whole html page from server. But I'm not quite sure yet how to explain that from the code... (Ok yea, I just proved it. It's saved in the .mov file named "universal rendering" in my Download folder)
+I have a feeling that the reason being when we click around, it does't trigger the get method so nothing is send to the server, but when we refresh the page or hit enter in the url link(that's basically the same as doing a GET method, then server response)
+
+- The match method from react-router is used on the server side. It matches teh requested URL (the url from the client side GET method) to the routes module routes. if we got props then we matched a route and can render. 
+
+- markup = renderToString(<RouterContext {...renderProps}/>); the {...renderProps} means spread the input props and pass them to the Router context 
+
+- This site explain more in detail about the server side rendering: https://github.com/reactjs/react-router-tutorial/tree/master/lessons/13-server-rendering
+
+- Remember, the console log run from server is gonna be print out at the terminal; the console log from the client(browser) is going to be print out at the browser console log
+
+- The reason we Isolate the route module is because the route will be used in both server and client; Otherwise, if it's just for the client, I can just put it at the main app js file. 
