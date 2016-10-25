@@ -24,7 +24,7 @@ The app will be available at http://localhost:3000
 
 
 ##Demo: 
-![Imgur](http://i.imgur.com/PrQFRWi.png)
+![Imgur](http://imgur.com/SiN5z2e.gif)
 
 The video demo can be found in this [link](https://youtu.be/zzW5FRw1vUo).
 
