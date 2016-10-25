@@ -2,6 +2,23 @@
 
 This is a great [tutorial](https://www.fullstackreact.com/articles/react-tutorial-cloning-yelp/) overall, despite that lots of steps were skipped. There's still a lot take away from the tutorial. 
 
+#Run
+```
+npm install
+
+npm run start
+```
+Then go to localhost:3000
+
+#Demo
+- Desktop version:
+![Imgur](http://imgur.com/D55jSCo.gif)
+- Mobile version: 
+![Imgur](http://imgur.com/GzzOB7d.gif)
+
+
+[Here](https://youtu.be/N8z6TuWfOqo) is the link for the video test. 
+
 
 #Notes: 
 - The tutorial did cover the **testing tools** karma, mocha and chai, but it didn't explain well how
@@ -22,22 +39,7 @@ This is a great [tutorial](https://www.fullstackreact.com/articles/react-tutoria
 
 
 
-#Run
-```
-npm install
 
-npm run start
-```
-Then go to localhost:3000
-
-#Demo
-- Desktop version:
-![Imgur](http://imgur.com/D55jSCo.gif)
-- Mobile version: 
-![Imgur](http://imgur.com/GzzOB7d.gif)
-
-
-[Here](https://youtu.be/N8z6TuWfOqo) is the link for the video test. 
 
 
 
