@@ -28,6 +28,25 @@ The app will be available at http://localhost:3000
 
 The video demo can be found in this [link](https://youtu.be/zzW5FRw1vUo).
 
+##Isomorphic rendering:
+Here comes the biggest thing I learned from this tutorial:  Isomorphic rendering!!!
+
+The main point of Isomorphic is to leverage the benefit of both server server side rendering and client side rendering. The server side rendering can give a a faster perceived load time, because the server spit out the whole html page so the browser (client) doesn't have to any javascript work for rendering. Therefore, server side rendering is often used to load a whole page while the client side rendering is used to switch small part the of the web app, say for example in this app, we go from the index page to the detailed athelete page using routing of the front end, and it doesn't take much resource, it just need to download the pic sources. When we first load the whole page, we load the whole html from the server. One special case is if say we are at the athelete detail page, but we hit the refresh, then the browser (client) is gonna go through the server rendering, the reason being that if we hit refresh, it's basically the same as doing a GET method, then server response. Otherwise, if we just switch from pages, there's not GET method involve therefore no server involved, just all client side rendering. It's fast!!!
+
+Here are a few quick demos of the server side rendering and the source loading from the server: 
+
+- When loading the main page using server side rendering: 
+
+![Imgur](http://i.imgur.com/wmmI6ak.png)
+
+- When we go to the athelete detail page and refresh the page, it's triggering the server side rendering: 
+
+![Imgur](http://i.imgur.com/CzbPIhw.png)
+
+- When we use the version one, the pure client rendering, the browser load the basic html template (un-rendered html):
+
+![Imgur](http://i.imgur.com/agRFfCk.png)
+
 ##Notes: 
 - In the IndexPage.js, we need to pass all the information about the current athlete as props using the JSX spread operator ({...object}). it' like a lazy way of doing name = {atheleteData.name} country = {atheleteData.country} ...
 
@@ -38,7 +57,7 @@ The video demo can be found in this [link](https://youtu.be/zzW5FRw1vUo).
 - This means catch all route in Express: app.get('*', (req, res) => {}
 
 - Some keypoints from a question on Quora why we use server side rendering:
-	- Faster perceived load times
+	- Faster perceived load time
 	- SEO 
 	- Less code maintenance
   
@@ -49,3 +68,4 @@ The video demo can be found in this [link](https://youtu.be/zzW5FRw1vUo).
 - Remember, the console log run from server is gonna be print out at the terminal; the console log from the client(browser) is going to be print out at the browser console log
 
 - The reason we Isolate the route module is because the route will be used in both server and client; Otherwise, if it's just for the client, I can just put it at the main app js file. 
+
