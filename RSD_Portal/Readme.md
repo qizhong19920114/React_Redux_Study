@@ -7,7 +7,7 @@ This is a practice app I developed that so I can access three RSD I purchased ea
 
 ## Demo:
 
-![Imgur](http://i.imgur.com/Tv5qun1.gif)
+![Imgur](http://i.imgur.com/9v1PvtO.gif)
 
 The full demo can be found in this [link](https://youtu.be/buVnTtBPC2M)
 
