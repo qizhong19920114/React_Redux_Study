@@ -21,7 +21,7 @@ The full demo can be found in this [link](https://youtu.be/buVnTtBPC2M)
 
 - When upload the file to the phone, the xcode keep saying team not assign, then I realize it's not team not assigned for the "RSD_Portal" but team not assign for the "RSD_PortalTests". The default test file is not assign. 
 
-- The app on my phone will get stuck in the launch screen. Here is why. The default test file is also part of the built process, that's why last night when I was trying to run the app without my phone connect to my computer and it won't work. So here is how you solve it. Go to Product --> Scheme --> Edit Scheme.
+- The app on my phone will get **stuck in the launch screen**. Here is why. The default test file is also part of the built process, that's why last night when I was trying to run the app without my phone connect to my computer and it won't work. So here is how you solve it. Go to Product --> Scheme --> Edit Scheme.
 Uncheck the RSD_PortalTests. Then it should work. 
 
 - Make sure "Allow Arbitrary Loads" is enabled other wise the web and the picture won't load. 
