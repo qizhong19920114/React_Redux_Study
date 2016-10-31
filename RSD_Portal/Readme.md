@@ -7,6 +7,10 @@ This is a practice app I developed that so I can access three RSD I purchased ea
 
 ## Demo:
 
+![Imgur](http://i.imgur.com/kLoZjcQ.gif)
+
+The full demo can be found in this [link](https://youtu.be/buVnTtBPC2M)
+
 ## Notes: 
 
 - It seems like you must use style or it won't render the component.
