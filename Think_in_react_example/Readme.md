@@ -10,7 +10,9 @@ This example answers it all. See the **Notes** section
 
 Just a little spoiler of how data flow works: 
 
-**The idea is that while data flows from parent to child, events can go the other way.**
+```diff
++ The idea is that while data flows from parent to child, events can go the other way
+```
 
 ##Run:
 
