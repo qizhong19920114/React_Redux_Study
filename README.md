@@ -4,6 +4,7 @@ This is a repository folders that keeps most of the material I use to study Reac
 
 Tutorial list (in the time order, most recent first): 
 
+- [Think in React example (one way data flow)] (https://github.com/qizhong19920114/React_Redux_Study/tree/master/Think_in_react_example)
 - [RSD Portal App](https://github.com/qizhong19920114/React_Redux_Study/tree/master/RSD_Portal)
 - [judo-heros-isomorphic-react](https://github.com/qizhong19920114/React_Redux_Study/tree/master/judo-heros-isomorphic-react)
 - [React_yelp_clone](https://github.com/qizhong19920114/React_Redux_Study/tree/master/React_yelp_clone)
