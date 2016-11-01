@@ -1,0 +1,14 @@
+Never pass state to an object's children!
+
+Props (properties) are meant to pass on values that the children are supposed to take. They can use this to change their own state, but the fundamental goal of props is message passing - it's how React objects communicate with other components.
+State, on the other hand, should be used internally. They govern parts of the object themselves, and should not be used to communicate with other objects. You can let the user interact with the state, however.
+
+The difference between them is equivalent to the difference between private variables (corresponding to state) and function arguments (the function corresponds to the React object; the arguments correspond to props). Objects can behave differently depending on their props and state, but we want them self-contained enough to behave more than just glorified data holders.
+
+You don't have to use state if your component doesn't need internal values. 
+
+We insist on this distinction because it improves development and user experience: you may want to change a global state, but keep the behaviour of the local children the same. 
+
+A simple example: a weather app allows you to toggle between Fahrenheit and Celsius, and then propagates changes to other components that use it. This choices correspond to the app's state: you can't use props because you're not really communicating with another React component. This change in state causes the weather app to re-render itself, and it communicates with its child components by passing props to them based on its state - these children then take on what value it receives its props and update themselves accordingly. If this weather app also has wind measurements, however, changing to Fahrenheit and Celsius doesn't affect that child responsible for rendering the wind - so we don't need to pass new props to it.
+
+It must be conceded, however, that this distinction is rather academic: you can mix state and props in however way you want, but it is a best practice to keep them separate where possible. Props is for message passing; state is for internal use (but is safe for a user to mess with, assuming you can figure out how to propagate the change). You can violate these if you want, but it goes against clean design.
